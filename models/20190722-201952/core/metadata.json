@@ -1,0 +1,60 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "email",
+        "location",
+        "budget",
+        "cuisine"
+      ]
+    },
+    "action_validate_location": {
+      "slots": [
+        "location",
+        "budget",
+        "cuisine"
+      ]
+    },
+    "action_validate_cuisine": {
+      "slots": [
+        "budget",
+        "cuisine"
+      ]
+    },
+    "action_validate_budget": {
+      "slots": [
+        "budget"
+      ]
+    },
+    "action_restaurant": {
+      "slots": [
+        "location"
+      ]
+    },
+    "action_check_email_id": {
+      "slots": [
+        "email"
+      ]
+    },
+    "action_send_email": {
+      "slots": [
+        "email"
+      ]
+    },
+    "action_restart": {
+      "slots": []
+    }
+  },
+  "python": "3.6.8",
+  "max_histories": [
+    null
+  ],
+  "ensemble_name": "rasa.core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa.core.policies.keras_policy.KerasPolicy"
+  ],
+  "trained_at": "20190722-201930",
+  "rasa": "1.1.7",
+  "tensorflow": "1.13.1",
+  "sklearn": "0.20.3"
+}
