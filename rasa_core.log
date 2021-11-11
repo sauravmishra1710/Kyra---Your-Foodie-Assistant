@@ -1,0 +1,163 @@
+2019-07-21 16:48:47,799 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-21 16:48:59,717 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-21 16:54:13,962 [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<configure_app.<locals>.run_cmdline_io() done, defined at /Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py:115> exception=AttributeError("'NoneType' object has no attribute 'find'",)>
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py", line 119, in run_cmdline_io
+    server_url=constants.DEFAULT_SERVER_FORMAT.format(port)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 122, in record_messages
+    text = get_cmd_input(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 66, in get_cmd_input
+    response = rasa.cli.utils.payload_from_button_question(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/cli/utils.py", line 198, in payload_from_button_question
+    payload = response[response.find("(") + 1 : response.find(")")]
+AttributeError: 'NoneType' object has no attribute 'find'
+2019-07-21 17:06:20,386 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-21 17:06:32,822 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 13:29:45,078 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 13:29:58,541 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 13:30:16,573 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL / not found
+2019-07-22 13:30:17,437 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-07-22 18:43:27,032 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 18:43:43,885 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 18:44:25,439 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/w'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /w not found
+2019-07-22 18:45:09,055 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/webhooks/{channel}/webhook'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/{channel}/webhook not found
+2019-07-22 18:45:11,202 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/webhooks/{channel}/webhook'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/{channel}/webhook not found
+2019-07-22 18:51:15,098 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/slack'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /slack not found
+2019-07-22 18:51:17,723 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/slack'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /slack not found
+2019-07-22 18:51:26,140 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/slack/events'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /slack/events not found
+2019-07-22 18:54:19,723 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-07-22 19:00:58,781 [WARNI]  Slack API currently allows only up to 5 buttons. If you add more, all will be ignored.
+2019-07-22 19:08:26,176 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:08:40,748 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:08:47,568 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-22 19:09:02,705 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:09:15,506 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:09:24,335 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-22 19:10:15,812 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:10:26,993 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:34:40,640 [INFO ]  Killing Sanic server now.
+2019-07-22 19:35:08,730 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:35:21,253 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:37:23,453 [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<configure_app.<locals>.run_cmdline_io() done, defined at /Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py:115> exception=AttributeError("'NoneType' object has no attribute 'find'",)>
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py", line 119, in run_cmdline_io
+    server_url=constants.DEFAULT_SERVER_FORMAT.format(port)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 122, in record_messages
+    text = get_cmd_input(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 66, in get_cmd_input
+    response = rasa.cli.utils.payload_from_button_question(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/cli/utils.py", line 198, in payload_from_button_question
+    payload = response[response.find("(") + 1 : response.find(")")]
+AttributeError: 'NoneType' object has no attribute 'find'
+2019-07-22 19:37:36,353 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:37:48,511 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:54:25,416 [INFO ]  Killing Sanic server now.
+2019-07-22 20:27:40,628 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 20:27:52,117 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 22:33:09,050 [INFO ]  Killing Sanic server now.
+2019-07-22 22:40:35,957 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 22:40:46,060 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
